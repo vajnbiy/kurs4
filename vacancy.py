@@ -33,3 +33,19 @@ class Vacancy:
 
             else:
                 self.salary = from_
+
+    def __eq__(self, other):
+        return self.salary == other.salary
+
+    def __gt__(self, other):
+        return self.salary > other.salary
+
+    def __lt__(self, other):
+        return self.salary < other.salary
+
+    def __ge__(self, other):
+        return self.salary >= other.salary
+
+    def __le__(self, other):
+        return self.salary <= other.salary
+

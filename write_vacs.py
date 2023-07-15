@@ -16,7 +16,10 @@ class WriteVacs:
 
             output.append(i.__dict__)
 
+        open(path, "w").close()
+
         with open(path, 'w') as file:
+
 
             file.write(str(json.dumps(output, indent=2, ensure_ascii=False)))
 
@@ -37,3 +40,4 @@ class WriteVacs:
                 output = data
 
         return output
+

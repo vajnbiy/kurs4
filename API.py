@@ -11,4 +11,3 @@ class Api(ABC):
     def to_file(self, reform):
 
         pass
-
